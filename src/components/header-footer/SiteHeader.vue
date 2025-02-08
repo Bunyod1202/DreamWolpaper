@@ -74,7 +74,7 @@
   line-height: 16px;
   letter-spacing: -0.107692px;
   color: var(--main-text-grey-color);
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
 }
 .list-link::before {
   content: '';
@@ -83,12 +83,14 @@
   bottom: 0;
   width: 0%;
   height: 4px;
+  transition: all 0.3s ease;
 }
 .list-link:hover {
   color: var(--main-text-dark-blue-color);
+  transition: all 0.3s ease;
 }
 .list-link:hover::before {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
   background-image: var(--main-btn-grodient-color);
   width: 100%;
 }
@@ -165,9 +167,7 @@
     bottom: 0;
     width: 0%;
     height: 4px;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
   }
   .list-link:hover {
     color: var(--main-text-dark-blue-color);
@@ -213,9 +213,7 @@
     bottom: 0;
     width: 0%;
     height: 4px;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
   }
   .list-link:hover {
     color: var(--main-text-dark-blue-color);

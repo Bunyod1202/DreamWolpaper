@@ -24,8 +24,33 @@ defineProps(['product'])
   position: relative;
   width: 270px;
   height: 254px;
+  transition: all 0.3s ease;
+}
+.cards-list__item:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  .cards-list__img {
+    scale: 1.08;
+    transition: all 0.3s ease;
+  }
+  .cards-list__card-content {
+    transition: all 0.3s ease;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #30c88f;
+    box-shadow:
+      rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .cards-list__name {
+    color: #fff;
+  }
+  .cards-list__price {
+    color: #fff;
+  }
 }
 .cards-list__img {
+  transition: all 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,23 +59,28 @@ defineProps(['product'])
   margin: 0 auto;
 }
 .cards-list__card-content {
+  transition: all 0.3s ease;
+  box-shadow:
+    rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  padding: 45px 10px 10px 10px;
+  padding: 48px 10px 10px 10px;
   height: 116px;
   background: #ffffff;
   border-radius: 12px;
 }
 .cards-list__name {
   text-align: center;
+  font-size: 16px;
 }
 .cards-list__price {
   text-align: right;
 
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.285714px;

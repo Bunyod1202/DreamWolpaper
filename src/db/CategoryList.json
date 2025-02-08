@@ -1,0 +1,157 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "Aesthetic & Stylish",
+    "category_description": "A visually stunning phone wallpaper featuring a soft pastel gradient with smooth, flowing abstract shapes. The design is clean, modern, and elegant, with a touch of minimalism. The colors blend harmoniously, creating a calming and sophisticated aesthetic.",
+    "category_image": "../../../public/Aesthetic_&_Stylish.png",
+    "category_color": "Category Color",
+    "category_status": true,
+    "category_order": 1,
+    "category_child": [
+      {
+        "category_child_id": 1,
+        "category_child_name": "Minimalist"
+      },
+      {
+        "category_child_id": 2,
+        "category_child_name": "Pastel & Soft Colors"
+      },
+      {
+        "category_child_id": 3,
+        "category_child_name": "Neon & Cyberpunk"
+      },
+      {
+        "category_child_id": 4,
+        "category_child_name": "Abstract Art"
+      },
+      {
+        "category_child_id": 5,
+        "category_child_name": "Vintage & Retro"
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "category_name": "Nature & Landscapes",
+    "category_description": "A breathtaking phone wallpaper capturing a serene mountain landscape at sunrise. The sky is painted in warm hues of orange, pink, and purple, reflecting over a crystal-clear lake. Mist gently rises from the forest, adding a mystical and peaceful atmosphere to the scene.",
+    "category_image": "../../../public/Nature_&_Landscapes.png",
+    "category_color": "Category Color",
+    "category_status": true,
+    "category_order": 2,
+    "category_child": [
+      {
+        "category_child_id": 1,
+        "category_child_name": "Mountains & Forests"
+      },
+      {
+        "category_child_id": 2,
+        "category_child_name": "Ocean & Beaches"
+      },
+      {
+        "category_child_id": 3,
+        "category_child_name": "Sunsets & Sunrises"
+      },
+      {
+        "category_child_id": 4,
+        "category_child_name": "Space & Galaxy"
+      },
+      {
+        "category_child_id": 5,
+        "category_child_name": "Flowers & Botanical"
+      }
+    ]
+  },
+  {
+    "category_id": 3,
+    "category_name": "Cool & Trendy",
+    "category_description": "A futuristic and vibrant phone wallpaper with neon cyberpunk aesthetics. The background showcases a glowing city skyline at night, with deep blues and purples accented by electric pink neon lights. A stylish, high-tech digital grid adds a modern and trendy touch.",
+    "category_image": "../../../public/Cool_&_Trendy.png",
+    "category_color": "Category Color",
+    "category_status": true,
+    "category_order": 3,
+    "category_child": [
+      {
+        "category_child_id": 1,
+        "category_child_name": "Dark Mode Wallpapers"
+      },
+      {
+        "category_child_id": 2,
+        "category_child_name": "Gradient & Colorful"
+      },
+      {
+        "category_child_id": 3,
+        "category_child_name": "3D & Optical Illusions"
+      },
+      {
+        "category_child_id": 4,
+        "category_child_name": "Glitch & Vaporwave"
+      },
+      {
+        "category_child_id": 5,
+        "category_child_name": "Typography & Quotes"
+      }
+    ]
+  },
+  {
+    "category_id": 4,
+    "category_name": "Animals & Fantasy",
+    "category_description": "A magical phone wallpaper featuring a majestic white wolf standing under a glowing full moon. The wolf’s fur shimmers with hints of blue and silver, and its piercing eyes glow with wisdom. A mysterious forest surrounds it, with fireflies and ethereal mist creating a dreamy, fantasy atmosphere.",
+    "category_image": "../../../public/Animals_&_Fantasy.png",
+    "category_color": "Category Color",
+    "category_status": true,
+    "category_order": 4,
+    "category_child": [
+      {
+        "category_child_id": 1,
+        "category_child_name": "Cute Pets (Cats, Dogs, etc.)"
+      },
+      {
+        "category_child_id": 2,
+        "category_child_name": "Wildlife & Exotic Animals"
+      },
+      {
+        "category_child_id": 3,
+        "category_child_name": "Mythical Creatures (Dragons, Unicorns)"
+      },
+      {
+        "category_child_id": 4,
+        "category_child_name": "Anime & Fantasy Art"
+      },
+      {
+        "category_child_id": 5,
+        "category_child_name": "Cosmic & Sci-Fi"
+      }
+    ]
+  },
+  {
+    "category_id": 5,
+    "category_name": "Lifestyle & Luxury",
+    "category_description": "A sleek and stylish phone wallpaper showcasing a luxury sports car parked under city lights at midnight. The car's glossy surface reflects neon lights from the urban skyline, creating an ultra-modern and high-end aesthetic. The scene exudes power, speed, and sophistication.",
+    "category_image": "../../../public/Lifestyle_&_Luxury.png",
+    "category_color": "Category Color",
+    "category_status": true,
+    "category_order": 5,
+    "category_child": [
+      {
+        "category_child_id": 1,
+        "category_child_name": "Cars & Supercars"
+      },
+      {
+        "category_child_id": 2,
+        "category_child_name": "Fashion & Style"
+      },
+      {
+        "category_child_id": 3,
+        "category_child_name": "Gaming & Esports"
+      },
+      {
+        "category_child_id": 4,
+        "category_child_name": "Sports & Fitness"
+      },
+      {
+        "category_child_id": 5,
+        "category_child_name": "Music & Concerts"
+      }
+    ]
+  }
+]

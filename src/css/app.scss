@@ -1,1 +1,87 @@
 // app global css in SCSS form
+:root {
+  --main-text-grey-color: #9597a5;
+  --main-text-white-color: #ffffff;
+  --main-text-dark-blue-color: #2d314d;
+  --main-btn-grodient-color: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url('../fonts/public-sans-v13-latin-100.woff2') format('woff2'),
+    url('../fonts/public-sans-v13-latin-100.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/public-sans-v13-latin-regular.woff2') format('woff2'),
+    url('../fonts/public-sans-v13-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../fonts/public-sans-v13-latin-500.woff2') format('woff2'),
+    url('../fonts/public-sans-v13-latin-500.woff') format('woff');
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: 'Public Sans', 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #30c88f;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: var(--main-btn-grodient-color);
+}
+img {
+  display: block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  padding: 8px 34px;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--main-text-white-color);
+  text-align: center;
+  background-image: var(--main-btn-grodient-color);
+}
+.btn:hover {
+  opacity: 0.4;
+}

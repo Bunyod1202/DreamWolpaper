@@ -91,7 +91,7 @@ defineProps(['category'])
     max-width: 327px;
     margin: 0 auto;
     background-color: #fff;
-    border-radius: 5px;
+    // border-radius: 5px;
   }
   .latest-articles__name {
     padding: 0 24px;
@@ -129,7 +129,7 @@ defineProps(['category'])
     max-width: 327px;
     margin: 0 auto;
     background-color: #fff;
-    border-radius: 5px;
+    // border-radius: 5px;
   }
   .latest-articles__name {
     padding: 0 24px;

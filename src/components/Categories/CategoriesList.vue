@@ -26,6 +26,7 @@ import categoryList from 'src/db/CategoryList.json'
 }
 .latest-articles__list {
   gap: 10px;
+  flex-wrap: wrap;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -41,7 +41,7 @@ defineProps(['category'])
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('../../public/card_content.png');
+  background-image: url('/card_content.png');
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 100%;
@@ -64,6 +64,7 @@ defineProps(['category'])
   line-height: 20px;
   letter-spacing: -0.285714px;
   color: #30c88f;
+  margin: 0;
 }
 .latest-articles__card-title a:hover {
   color: #fff;

@@ -1,36 +1,5 @@
 [
   {
-    "category_id": 1,
-    "category_name": "Aesthetic & Stylish",
-    "category_description": "A visually stunning phone wallpaper featuring a soft pastel gradient with smooth, flowing abstract shapes. The design is clean, modern, and elegant, with a touch of minimalism. The colors blend harmoniously, creating a calming and sophisticated aesthetic.",
-    "category_image": "/categories/Aesthetic_&_Stylish.png",
-    "category_color": "Category Color",
-    "category_status": true,
-    "category_order": 1,
-    "category_child": [
-      {
-        "category_child_id": 1,
-        "category_child_name": "Minimalist"
-      },
-      {
-        "category_child_id": 2,
-        "category_child_name": "Pastel & Soft Colors"
-      },
-      {
-        "category_child_id": 3,
-        "category_child_name": "Neon & Cyberpunk"
-      },
-      {
-        "category_child_id": 4,
-        "category_child_name": "Abstract Art"
-      },
-      {
-        "category_child_id": 5,
-        "category_child_name": "Vintage & Retro"
-      }
-    ]
-  },
-  {
     "category_id": 2,
     "category_name": "Nature & Landscapes",
     "category_description": "A breathtaking phone wallpaper capturing a serene mountain landscape at sunrise. The sky is painted in warm hues of orange, pink, and purple, reflecting over a crystal-clear lake. Mist gently rises from the forest, adding a mystical and peaceful atmosphere to the scene.",

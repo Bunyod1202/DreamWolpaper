@@ -2,9 +2,9 @@
   <li class="cards-list__item">
     <img
       class="cards-list__img"
+      width="227"
+      height="185"
       :src="product.product_image"
-      height=""
-      width=""
       alt="foto dollor"
     />
     <div class="cards-list__card-content">
@@ -22,8 +22,8 @@ defineProps(['product'])
 <style lang="scss" scoped>
 .cards-list__item {
   position: relative;
-  width: 190px;
-  height: 170px;
+  width: 270px;
+  height: 254px;
 }
 .cards-list__img {
   position: absolute;
@@ -40,7 +40,7 @@ defineProps(['product'])
   right: 0;
   margin: 0 auto;
   padding: 45px 10px 10px 10px;
-  height: 110px;
+  height: 116px;
   background: #ffffff;
   border-radius: 12px;
 }

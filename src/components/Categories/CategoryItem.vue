@@ -102,11 +102,10 @@ defineProps(['category'])
   }
   .latest-articles__card-title a {
     padding: 0 24px;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.285714px;
-    color: var(--main-text-dark-blue-color);
   }
   .latest-articles__card-title a:hover {
     color: #30c88f;
@@ -141,11 +140,10 @@ defineProps(['category'])
   }
   .latest-articles__card-title a {
     padding: 0 24px;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.285714px;
-    color: var(--main-text-dark-blue-color);
   }
   .latest-articles__card-title a:hover {
     color: #30c88f;

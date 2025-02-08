@@ -68,10 +68,6 @@ import ProductsList from 'src/db/ProductsList.json'
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
   .content__title {
     max-width: 300px;
@@ -86,17 +82,6 @@ import ProductsList from 'src/db/ProductsList.json'
     line-height: 25px;
     letter-spacing: -0.234375px;
     margin: 0 auto;
-  }
-  .why-easybank__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 72px 0 0 0;
-    padding: 0;
   }
 }
 @media only screen and (max-width: 613px) {
@@ -111,6 +96,8 @@ import ProductsList from 'src/db/ProductsList.json'
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .content__title {
     max-width: 300px;
@@ -125,28 +112,6 @@ import ProductsList from 'src/db/ProductsList.json'
     line-height: 25px;
     letter-spacing: -0.234375px;
     margin: 0 auto;
-  }
-  .why-easybank__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 72px 0 0 0;
-    padding: 0;
-  }
-}
-@media only screen and (max-width: 613px) {
-  .why-easybank__list {
-    gap: 10px;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 }
 </style>

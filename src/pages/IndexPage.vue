@@ -165,7 +165,7 @@ import CategoriesList from 'src/components/Categories/CategoriesList.vue'
   }
   .card__title {
     font-weight: 100;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 47px;
   }
   .card__text {

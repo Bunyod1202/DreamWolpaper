@@ -65,6 +65,7 @@ import categoryList from 'src/db/CategoryList.json'
   }
   .latest-articles__title {
     text-align: center;
+    font-size: 30px;
   }
   .latest-articles__list {
     list-style: none;

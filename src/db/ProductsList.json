@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_name": "Mountains & Forests",
-    "product_image": "../../../public/products/card_item_img (1).png",
+    "product_image": "../../public/products/card_item_img (1).png",
     "product_price": 2,
     "product_status": true,
     "product_order": 1,
@@ -12,7 +12,7 @@
   {
     "product_id": 2,
     "product_name": "Flowers & Botanical",
-    "product_image": "../../../public/products/card_item_img.png",
+    "product_image": "../../public/products/card_item_img.png",
     "product_price": 3,
     "product_status": true,
     "product_order": 2,

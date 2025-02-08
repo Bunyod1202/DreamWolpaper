@@ -12,12 +12,7 @@
             <a href="#" class="btn">Request Invite</a>
           </div>
           <div class="banner__img">
-            <img
-              src="../../public/hero-phones-desktop.png"
-              width="729"
-              height="900"
-              alt="four phone"
-            />
+            <img :src="currentImage" width="729" height="900" alt="four phone" />
           </div>
         </div>
       </div>
@@ -38,6 +33,35 @@
 <script setup>
 import CardsList from 'src/components/Cards/CardsList.vue'
 import CategoriesList from 'src/components/Categories/CategoriesList.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+// Rasmlar ro'yxati
+const images = ref([
+  '/hero-phones-desktop (1).png',
+  '/hero-phones-desktop (2).png',
+  '/hero-phones-desktop (3).png',
+  '/hero-phones-desktop (4).png',
+  '/hero-phones-desktop (5).png',
+  '/hero-phones-desktop (6).png',
+])
+
+const currentIndex = ref(Math.floor(Math.random() * images.value.length))
+const currentImage = ref(images.value[currentIndex.value])
+
+let intervalId
+
+const changeImage = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.value.length
+  currentImage.value = images.value[currentIndex.value]
+}
+
+onMounted(() => {
+  intervalId = setInterval(changeImage, 120000) // 2 daqiqa (120,000ms)
+})
+
+onUnmounted(() => {
+  clearInterval(intervalId)
+})
 </script>
 <style scoped lang="scss">
 .hero {

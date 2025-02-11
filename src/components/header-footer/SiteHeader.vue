@@ -8,19 +8,19 @@
         <nav class="nav">
           <ul class="list">
             <li class="list-item">
-              <a href="#" class="list-link">Home</a>
+              <router-link to="/" class="list-link">Home</router-link>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">About</a>
+              <router-link to="/categories" class="list-link">Categories</router-link>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Contact</a>
+              <router-link to="/products" class="list-link">Products</router-link>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Blog</a>
+              <router-link href="#" class="list-link">Blog</router-link>
             </li>
             <li class="list-item">
-              <a href="#" class="list-link">Careers</a>
+              <router-link href="#" class="list-link">Careers</router-link>
             </li>
           </ul>
         </nav>

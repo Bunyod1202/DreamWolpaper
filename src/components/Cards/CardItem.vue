@@ -2,8 +2,24 @@
   <li class="cards-list__item">
     <img
       class="cards-list__img"
-      width="227"
-      height="185"
+      :width="
+        product.img_count === 3
+          ? '227'
+          : product.img_count === 2
+            ? '190'
+            : product.img_count === 1
+              ? '83'
+              : '0'
+      "
+      :height="
+        product.img_count === 3
+          ? '185'
+          : product.img_count === 2
+            ? '181'
+            : product.img_count === 1
+              ? '164'
+              : '0'
+      "
       :src="product.product_image"
       alt="foto dollor"
     />
@@ -22,7 +38,7 @@ defineProps(['product'])
 <style lang="scss" scoped>
 .cards-list__item {
   position: relative;
-  width: 270px;
+  width: 247px;
   height: 254px;
   transition: all 0.3s ease;
 }

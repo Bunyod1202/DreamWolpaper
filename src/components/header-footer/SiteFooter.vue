@@ -120,10 +120,10 @@
           </li>
         </ul>
         <div class="btn-group">
-          <div class="button">
+          <div>
             <a href="#" class="btn">Request Invite</a>
           </div>
-          <p class="btn-group__text">© Easybank. All Rights Reserved</p>
+          <p class="btn-group__text">© DreamWallpapers. All Rights Reserved</p>
         </div>
       </div>
     </div>

@@ -9,14 +9,41 @@
       </p>
     </div>
     <ul class="why-easybank__list">
-      <CardItem v-for="item in ProductsList" :key="item" :product="item" />
+      <CardItem v-for="item in products" :key="item" :product="item" />
     </ul>
+    <router-link to="/products" class="btn btn-more">View More</router-link>
   </div>
 </template>
 
 <script setup>
 import CardItem from './CardItem.vue'
-import ProductsList from 'src/db/ProductsList.json'
+import { onMounted, ref } from 'vue'
+
+const databaseUrl = 'https://buyld-7ddad-default-rtdb.firebaseio.com/products'
+const products = ref([])
+
+const fetchUsers = async () => {
+  try {
+    const response = await fetch(`${databaseUrl}.json`)
+    const data = await response.json()
+
+    if (data) {
+      products.value = data['-OJCvqtLAjR6VCSqU3I4'].slice(-8)
+    }
+  } catch (error) {
+    console.error('Error fetching users:', error)
+  }
+}
+// const product = await fetch(`${databaseUrl}.json`, {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(),
+// })
+// console.log(product)
+
+onMounted(fetchUsers)
 </script>
 
 <style lang="scss" scoped>
@@ -54,6 +81,11 @@ import ProductsList from 'src/db/ProductsList.json'
 
   margin: 72px 0 0 0;
   padding: 0;
+}
+.btn-more {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
 }
 @media only screen and (max-width: 1100px) {
   .why-easybank__content {

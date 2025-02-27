@@ -1,5 +1,5 @@
 <template>
-  <li class="cards-list__item">
+  <li class="cards-list__item" :class="orderarr.includes(product.id) ? 'card-active' : ''">
     <img
       class="cards-list__img"
       :width="
@@ -20,34 +20,103 @@
               ? '164'
               : '0'
       "
-      :src="product.product_image"
+      :src="product.image"
       alt="foto dollor"
     />
     <div class="cards-list__card-content">
-      <p class="cards-list__name">{{ product.product_name }}</p>
-
-      <p class="cards-list__price">{{ product.product_price }}$</p>
+      <p class="cards-list__name">{{ product.name }}</p>
+      <div class="card-wrapper">
+        <p class="cards-list__price">{{ product.price }}$</p>
+        <button class="btn-cart" rounded @click="addToCart(product)">
+          <img class="btn-cart__green" src="../../assets/shopping-cart.png" alt="" />
+          <img class="btn-cart__white" src="../../assets/shopping-cart white.png" alt="" />
+        </button>
+      </div>
     </div>
   </li>
 </template>
 
 <script setup>
-defineProps(['product'])
+defineProps(['product', 'order'])
+import { useCounterStore } from 'stores/counter'
+import { computed } from 'vue'
+
+const orderarr = computed(() => {
+  return counterStore.order.map((item) => item.id)
+})
+
+const counterStore = useCounterStore()
+
+function addToCart(product) {
+  if (counterStore.order.find((item) => item.id === product.id)) {
+    counterStore.decrement(product)
+    return
+  }
+  counterStore.increment(product)
+}
 </script>
 
 <style lang="scss" scoped>
+.card-active {
+  transition: all 0.3s ease;
+
+  .cards-list__img {
+    scale: 1;
+    transition: all 0.3s ease;
+  }
+  .btn-cart__green {
+    display: none;
+  }
+  .btn-cart__white {
+    display: block;
+  }
+  .cards-list__card-content {
+    border-bottom: 5px solid #30c88f;
+    transition: all 0.3s ease;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #30c88f;
+    box-shadow:
+      rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .cards-list__name {
+    color: #fff;
+  }
+  .cards-list__price {
+    color: #fff;
+  }
+}
 .cards-list__item {
   position: relative;
   width: 247px;
   height: 254px;
   transition: all 0.3s ease;
 }
+.cards-list__name {
+  margin: 5px auto;
+}
+.cards-list__price {
+  margin: 5px 0;
+}
+.btn-cart__green {
+  display: block;
+}
+.btn-cart__white {
+  display: none;
+}
 .cards-list__item:hover {
   transition: all 0.3s ease;
-  cursor: pointer;
+
   .cards-list__img {
     scale: 1.08;
     transition: all 0.3s ease;
+  }
+  .btn-cart__green {
+    display: none;
+  }
+  .btn-cart__white {
+    display: block;
   }
   .cards-list__card-content {
     transition: all 0.3s ease;
@@ -64,6 +133,19 @@ defineProps(['product'])
   .cards-list__price {
     color: #fff;
   }
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-cart {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 .cards-list__img {
   transition: all 0.3s ease;

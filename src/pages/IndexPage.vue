@@ -105,7 +105,7 @@ onUnmounted(() => {
 
 .intro {
   background-color: #f4f5f7;
-  padding: 95px 0;
+  padding: 34px 0;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -162,7 +162,7 @@ onUnmounted(() => {
 
   .intro {
     background-color: #f4f5f7;
-    padding: 64px 0;
+    padding: 34px 0;
   }
 }
 @media only screen and (max-width: 613px) {
@@ -214,7 +214,7 @@ onUnmounted(() => {
 
   .intro {
     background-color: #f4f5f7;
-    padding: 64px 0;
+    padding: 34px 0;
   }
 }
 </style>
